@@ -1,0 +1,15 @@
+# IBL Datasets
+data/
+
+# Pre-computed Results (but keep the folder structure)
+*.csv
+*.pkl
+*.npz
+!results/.gitkeep
+
+# Python Environments & Cache
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
