@@ -16,7 +16,7 @@ This repository features a highly modular, production-ready machine learning pip
 * **Statistical Correction:** Uses a 1-sample t-test against theoretical chance, controlled for multiple comparisons using the False Discovery Rate (FDR/Benjamini-Hochberg) across all region-time pairs.
 
 ## Group Analyses To Be Added
-Alongside predictive decoding pipeline, this repository houses complementary analyses conducted by the research team:
+Alongside predictive decoding pipeline, this repository will house complementary analyses conducted by the research team:
 
 * **`brain_wide_recruitment/`**: Investigates chronological recruitment by calculating first-response sensory latencies to track signal propagation.
 * **`regional_feature_selectivity/`**: Evaluates how neural populations represent distinct variables utilizing Principal Component Analysis (PCA).
