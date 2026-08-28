@@ -7,3 +7,9 @@ matplotlib
 seaborn
 one-api
 iblutil
+iblatlas
+ibllib
+pyarrow
+tqdm
+jupyterlab
+nbformat

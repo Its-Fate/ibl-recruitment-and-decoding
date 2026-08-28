@@ -6,6 +6,8 @@ data/
 *.pkl
 *.npz
 !results/.gitkeep
+results/q3/*
+!results/q3/.gitkeep
 
 # Python Environments & Cache
 __pycache__/

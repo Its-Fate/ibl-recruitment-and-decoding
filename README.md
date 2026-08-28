@@ -15,11 +15,11 @@ This repository features a highly modular, production-ready machine learning pip
 * **Rigorous Validation:** Evaluates decoding accuracy using a 5-fold Stratified K-Fold cross-validation strategy, balancing class weights to account for behavioral asymmetries.
 * **Statistical Correction:** Uses a 1-sample t-test against theoretical chance, controlled for multiple comparisons using the False Discovery Rate (FDR/Benjamini-Hochberg) across all region-time pairs.
 
-## Group Analyses To Be Added
-Alongside predictive decoding pipeline, this repository will house complementary analyses conducted by the research team:
+## Group Analyses
+Alongside the predictive decoding pipeline, this repository houses complementary analyses conducted by the research team:
 
-* **`brain_wide_recruitment/`**: Investigates chronological recruitment by calculating first-response sensory latencies to track signal propagation.
-* **`regional_feature_selectivity/`**: Evaluates how neural populations represent distinct variables utilizing Principal Component Analysis (PCA).
+* **[`brain_wide_recruitment/`](brain_wide_recruitment/)**: Implemented by **Arash Kanafchian**. Calculates responsive-unit and population-trajectory latencies to test the chronological propagation of visual signals across anatomically grouped regions.
+* **`regional_feature_selectivity/`** *(planned)*: Evaluates how neural populations represent distinct variables utilizing Principal Component Analysis (PCA).
 
 ## Repository Structure
 ```text
@@ -28,11 +28,12 @@ Alongside predictive decoding pipeline, this repository will house complementary
 │   ├── preprocessing.py       # Trial splitting and window matrix generation
 │   ├── decoders.py            # Logistic Regression and cross-validation logic
 │   ├── stats.py               # Statistical validation and FDR correction
-│   └── plotting.py            # Swanson flatmaps and temporal visualization
+│   ├── plotting.py            # Swanson flatmaps and temporal visualization
+│   └── ibl_q3/                # Q3 latency statistics, paths, artifacts, and plots
 ├── notebooks/                          
 │   └── population_decoding.ipynb    # Core visualization and results
 ├── results/                            # Pre-computed decoding outputs (.csv)
-├── brain_wide_recruitment/          # Chronological recruitment logic
+├── brain_wide_recruitment/          # Arash Q3 notebook and analysis guide
 ├── regional_feature_selectivity/    # PCA feature extraction logic
 ├── .gitignore                          # Excludes large data files and __pycache__
 └── requirements.txt                    # Project dependencies
